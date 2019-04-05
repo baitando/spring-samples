@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot</module>
+        <module>spring-actuator</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
