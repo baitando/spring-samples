@@ -1,0 +1,6 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        # Just for demonstration which endpoints exist. Don't use this setting in a production environment
+        include: '*'
