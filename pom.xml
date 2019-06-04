@@ -5,7 +5,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot</module>
+        <module>annotation-inheritance</module>
+        <module>spring-aop</module>
+        <module>spring-security</module>
         <module>spring-actuator</module>
+        <module>autoconfig</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
