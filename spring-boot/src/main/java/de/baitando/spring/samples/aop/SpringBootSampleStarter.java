@@ -1,4 +1,4 @@
-package de.baitando.spring.samples.boot;
+package de.baitando.spring.samples.aop;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
