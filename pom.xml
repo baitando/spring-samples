@@ -9,7 +9,7 @@
         <module>spring-aop</module>
         <module>spring-security</module>
         <module>spring-actuator</module>
-        <module>autoconfig</module>
+        <module>autoconfig-conditionals</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
