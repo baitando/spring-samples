@@ -10,6 +10,7 @@
         <module>spring-security</module>
         <module>spring-actuator</module>
         <module>autoconfig-conditionals</module>
+        <module>explicit-config</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
