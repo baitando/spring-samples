@@ -13,6 +13,7 @@
         <module>explicit-config</module>
         <module>custom-configuration</module>
         <module>spring-data-jpa</module>
+        <module>context-retrieval</module>
     </modules>
 
 
