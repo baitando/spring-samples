@@ -23,7 +23,7 @@ public class ExplicitConfigStarter {
         System.out.println("-------------------------");
 
         // Activate this for the demo of @Lazy in the configuration class
-        //context.getBean(LocalRefService.class);
+        context.getBean(LocalRefService.class);
 
         // Add breakpoint here to check whether a proxy is returned or not (depdens
         // on proxyMode of @Scope

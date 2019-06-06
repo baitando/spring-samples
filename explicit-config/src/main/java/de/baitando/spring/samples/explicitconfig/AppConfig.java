@@ -29,9 +29,9 @@ public class AppConfig {
 
         System.out.println("-------------------------");
 
-        System.out.println("Local ref bean with singleton scope #1: " + singletonService());
-        System.out.println("Local ref bean with singleton scope #2: " + singletonService());
-        System.out.println("Local ref bean with singleton scope #3: " + singletonService());
+        System.out.println("Local ref bean #1: " + singletonService());
+        System.out.println("Local ref bean #2: " + singletonService());
+        System.out.println("Local ref bean #3: " + singletonService());
 
         return new LocalRefService();
     }
