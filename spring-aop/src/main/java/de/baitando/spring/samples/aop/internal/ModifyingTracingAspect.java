@@ -13,7 +13,7 @@ public class ModifyingTracingAspect {
 
     private Logger log = LoggerFactory.getLogger(ModifyingTracingAspect.class);
 
-    @Around("within(de.baitando.spring.samples.aop.*) && @annotation(de.baitando.spring.samples.aop.Traced)")
+    @Around("within(de.baitando.spring.samples.aop..*) && @annotation(de.baitando.spring.samples.aop.Traced)")
     public boolean around(final ProceedingJoinPoint joinPoint) throws Throwable {
 
         log.info("Entering method {}", joinPoint.getSignature().getName());
