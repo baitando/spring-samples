@@ -18,6 +18,6 @@ public class MySecurityChecker {
 
     public boolean isPermittedPre(Long id) {
         logger.info("Checking isPermittedPre() for {}", id);
-        return true;
+        return false;
     }
 }
