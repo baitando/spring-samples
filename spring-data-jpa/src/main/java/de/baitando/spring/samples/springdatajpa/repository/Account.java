@@ -1,14 +1,16 @@
 package de.baitando.spring.samples.springdatajpa.repository;
 
 import javax.persistence.Embedded;
-import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
 public class Account {
 
-    @EmbeddedId
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String iban;
