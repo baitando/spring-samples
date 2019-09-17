@@ -15,6 +15,7 @@
         <module>spring-data-jpa</module>
         <module>context-retrieval</module>
         <module>package-scan</module>
+        <module>profile-config</module>
     </modules>
 
 
