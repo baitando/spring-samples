@@ -54,6 +54,7 @@ jobs:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}
 
+      - run: mvn compile
       # run sonarqube
       - run: mvn sonar:sonar -Dsonar.projectKey=baitando_spring-samples -Dsonar.organization=baitando -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${SONAR_LOGIN}
 workflows:
