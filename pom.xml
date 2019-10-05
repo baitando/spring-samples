@@ -5,14 +5,28 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot</module>
+        <module>annotation-inheritance</module>
+        <module>spring-aop</module>
+        <module>spring-security</module>
         <module>spring-actuator</module>
+        <module>autoconfig-conditionals</module>
+        <module>explicit-config</module>
+        <module>custom-configuration</module>
+        <module>spring-data-jpa</module>
+        <module>context-retrieval</module>
+        <module>package-scan</module>
+        <module>profile-config</module>
     </modules>
+
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+
     <groupId>de.baitando.spring.samples</groupId>
     <artifactId>spring-samples</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -51,6 +65,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!-- https://stackoverflow.com/questions/50661648/spring-boot-fails-to-run-maven-surefire-plugin-classnotfoundexception-org-apache -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <useSystemClassLoader>false</useSystemClassLoader>
+                </configuration>
             </plugin>
         </plugins>
     </build>
