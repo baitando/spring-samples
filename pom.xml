@@ -16,7 +16,7 @@
         <module>context-retrieval</module>
         <module>package-scan</module>
         <module>profile-config</module>
-        <module>lombok</module>
+        <module>lombok-autowiring</module>
     </modules>
 
 
