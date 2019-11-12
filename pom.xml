@@ -17,6 +17,7 @@
         <module>package-scan</module>
         <module>profile-config</module>
         <module>lombok-autowiring</module>
+        <module>component-scan</module>
     </modules>
 
 
