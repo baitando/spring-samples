@@ -18,6 +18,7 @@
         <module>profile-config</module>
         <module>lombok-autowiring</module>
         <module>component-scan</module>
+        <module>jpa-data-init</module>
     </modules>
 
 

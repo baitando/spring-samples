@@ -1,0 +1,5 @@
+# This is empty, because create-drop is the default when using an embedded database and no schema manager was detected
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
