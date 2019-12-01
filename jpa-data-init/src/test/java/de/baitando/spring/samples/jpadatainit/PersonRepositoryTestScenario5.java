@@ -14,15 +14,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * There is a {@code data.sql} and a {@code schema.sql} file used, but the JPA provider also generates the schema and overwrites the schema created by `schema.sql`.
- * One data entry is created with {@code data.sql} and one with {@link TestEntityManager}.
- * Due to the JPA provider overwriting the initial schema, the data created by {@code data.sql} is lost.
- * There is only one data entry in the database.
+ * There is a {@code data.sql} used without a {@code schema.sql} file. Hibernate creates the schema. One data entry
+ * is created with {@code data.sql} and one with `TestEntityManager`. Because of the absence of a {@code schema.sql}
+ * file, the {@code data.sql} script now runs after Hibernate created the schema. There are two data entries in
+ * the database.
  */
 @DataJpaTest
-@ActiveProfiles("scenario4")
+@ActiveProfiles("scenario5")
 @RunWith(SpringRunner.class)
-public class PersonRepositoryTestScenario4 {
+public class PersonRepositoryTestScenario5 {
 
     @Autowired
     private PersonRepository personRepository;
@@ -30,7 +30,7 @@ public class PersonRepositoryTestScenario4 {
     @Autowired
     private TestEntityManager testEntityManager;
 
-    private Logger log = LoggerFactory.getLogger(PersonRepositoryTestScenario4.class);
+    private Logger log = LoggerFactory.getLogger(PersonRepositoryTestScenario5.class);
 
     @Test
     public void test() {
@@ -42,6 +42,6 @@ public class PersonRepositoryTestScenario4 {
         log.info("The data entries are the following ones: {}", result);
 
         // Assert
-        assertThat(IterableUtil.sizeOf(result)).isEqualTo(1);
+        assertThat(IterableUtil.sizeOf(result)).isEqualTo(2);
     }
 }
