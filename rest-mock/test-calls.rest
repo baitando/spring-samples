@@ -1,0 +1,11 @@
+POST http://localhost:8080/exchanges
+Content-Type: application/json
+Accept: application/json
+
+{
+  "amount": 123.45,
+  "originCurrency": "EUR",
+  "targetCurrency": "GBP"
+}
+
+###
