@@ -20,6 +20,7 @@
         <module>component-scan</module>
         <module>jpa-data-init</module>
         <module>rest-mock</module>
+        <module>pre-logging</module>
     </modules>
 
 
