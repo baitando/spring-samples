@@ -21,13 +21,14 @@
         <module>jpa-data-init</module>
         <module>rest-mock</module>
         <module>pre-logging</module>
+        <module>spring-hateoas</module>
     </modules>
 
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
+        <version>2.2.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
