@@ -21,14 +21,14 @@ public class AccountControllerTest {
 
     @Test
     public void getAccountById_withExistingId_returnsAccount() throws Exception {
-
-        // arrange
-
-        // act
+        // Act
         ResultActions result = mockMvc.perform(get("/accounts/{accountId}", 456L));
 
-        // assert
-        result.andExpect(status().isOk())
-                .andExpect(jsonPath("$._links.self.href").value("http://localhost/accounts/456"));
+        // Assert
+        result
+                .andExpect(status()
+                        .isOk())
+                .andExpect(jsonPath("$._links.self.href")
+                        .value("http://localhost/accounts/456"));
     }
 }

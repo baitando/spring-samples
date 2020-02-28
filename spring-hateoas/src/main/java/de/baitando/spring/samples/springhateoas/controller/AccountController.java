@@ -9,7 +9,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 /**
- * REST controller providing access to the {@link AccountDetailResponse } resource.
+ * REST controller providing access to the account resource.
  */
 @RestController
 public class AccountController {
