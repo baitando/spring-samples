@@ -8,8 +8,11 @@ import org.springframework.stereotype.Service;
 @Profile("one")
 public class MyServiceOne implements MyService {
 
-    @Value("${dummy}")
-    private String dummy;
+    private final String dummy;
+
+    private MyServiceOne(@Value("${dummy}") String dummy) {
+        this.dummy = dummy;
+    }
 
     @Override
     public String getDummy() {

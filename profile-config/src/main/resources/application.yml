@@ -1,4 +1,1 @@
-spring:
-  profiles:
-    active: one
-dummy: blubber
+dummy: fallback

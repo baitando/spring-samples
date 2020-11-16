@@ -1,22 +1,21 @@
 package de.baitando.spring.samples.explicitconfig;
 
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
+
+import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROTOTYPE;
 
 @Configuration
 public class AppConfig {
 
     @Bean
-    @Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)
     public SingletonService singletonService() {
         return new SingletonService();
     }
 
     @Bean
-    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    @Scope(SCOPE_PROTOTYPE)
     public PrototypeService prototypeService() {
         return new PrototypeService();
     }
