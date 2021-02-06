@@ -4,13 +4,13 @@ import org.springframework.cglib.proxy.Enhancer;
 
 public class CglibTester {
 
-    public static void main(String[] args) {
-        System.out.println("##### Original Factory");
-        test(getOriginalFactory());
-
-        System.out.println("\n\n##### Proxy Factory");
-        test(getProxyFactory());
-    }
+//    public static void main(String[] args) {
+//        System.out.println("##### Original Factory");
+//        test(getOriginalFactory());
+//
+//        System.out.println("\n\n##### Proxy Factory");
+//        test(getProxyFactory());
+//    }
 
     private static void test(CglibDemoFactory factory) {
         System.out.println("***** Factory instance");

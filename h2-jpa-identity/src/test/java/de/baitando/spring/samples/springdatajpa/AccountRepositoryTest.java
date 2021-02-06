@@ -3,6 +3,7 @@ package de.baitando.spring.samples.springdatajpa;
 import de.baitando.spring.samples.springdatajpa.repository.Account;
 import de.baitando.spring.samples.springdatajpa.repository.AccountRepository;
 import de.baitando.spring.samples.springdatajpa.repository.Money;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
+@Ignore
 public class AccountRepositoryTest {
 
     @Autowired
