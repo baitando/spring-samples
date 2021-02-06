@@ -24,6 +24,7 @@
         <module>pre-logging</module>
         <module>spring-hateoas</module>
         <module>h2-jpa-identity</module>
+        <module>lite-config</module>
     </modules>
 
 

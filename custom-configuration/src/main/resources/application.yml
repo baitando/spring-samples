@@ -1,2 +1,6 @@
 custom:
   bar:
+spring:
+  jpa:
+    hibernate:
+      ddl-auto:

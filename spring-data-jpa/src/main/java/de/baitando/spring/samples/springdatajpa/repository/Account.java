@@ -4,6 +4,7 @@ import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.util.Objects;
 
 @Entity
@@ -14,6 +15,9 @@ public class Account {
     private Long id;
 
     private String iban;
+
+    @Transient
+    private String blub;
 
     @Embedded
     private Money balance;

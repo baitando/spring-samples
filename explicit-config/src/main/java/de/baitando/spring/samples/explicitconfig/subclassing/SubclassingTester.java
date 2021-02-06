@@ -3,8 +3,8 @@ package de.baitando.spring.samples.explicitconfig.subclassing;
 public class SubclassingTester {
 
     public static void main(String[] args) {
-        System.out.println("##### Original Factory");
-        test(getOriginalFactory());
+//        System.out.println("##### Original Factory");
+//        test(getOriginalFactory());
 
         System.out.println("\n\n##### Proxy Factory");
         test(getProxyFactory());
