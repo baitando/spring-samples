@@ -8,15 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DummyControllerRest {
 
-    private Counter requestCounter;
+    private final Counter requestCounter;
 
     public DummyControllerRest(MeterRegistry meterRegistry) {
         requestCounter = Counter.builder("dummy.counter").register(meterRegistry);
     }
 
     @GetMapping("/dummy")
-    public String getDummy()
-    {
+    public String getDummy() {
         requestCounter.increment();
         return "Requests received: " + requestCounter.count();
     }

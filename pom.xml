@@ -9,6 +9,7 @@
         <module>spring-aop</module>
         <module>spring-security</module>
         <module>spring-actuator</module>
+        <module>spring-legacy</module>
         <module>autoconfig-conditionals</module>
         <module>explicit-config</module>
         <module>custom-configuration</module>
@@ -22,6 +23,8 @@
         <module>rest-mock</module>
         <module>pre-logging</module>
         <module>spring-hateoas</module>
+        <module>h2-jpa-identity</module>
+        <module>lite-config</module>
     </modules>
 
 

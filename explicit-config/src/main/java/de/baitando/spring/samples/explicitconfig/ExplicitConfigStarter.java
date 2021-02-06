@@ -25,7 +25,7 @@ public class ExplicitConfigStarter {
         // Activate this for the demo of @Lazy in the configuration class
         context.getBean(LocalRefService.class);
 
-        // Add breakpoint here to check whether a proxy is returned or not (depdens
+        // Add breakpoint here to check whether a proxy is returned or not (depdends
         // on proxyMode of @Scope
         SingletonService s = context.getBean(SingletonService.class);
 
