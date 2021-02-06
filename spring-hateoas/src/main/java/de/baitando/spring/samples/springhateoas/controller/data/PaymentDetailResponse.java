@@ -2,6 +2,9 @@ package de.baitando.spring.samples.springhateoas.controller.data;
 
 import org.springframework.hateoas.RepresentationModel;
 
+/**
+ * Representation of a single payment resource.
+ */
 public class PaymentDetailResponse extends RepresentationModel<PaymentDetailResponse> {
     private Long id;
     private AccountDetailResponse initiator;

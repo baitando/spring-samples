@@ -2,6 +2,9 @@ package de.baitando.spring.samples.springhateoas.controller.data;
 
 import org.springframework.hateoas.RepresentationModel;
 
+/**
+ * Representation of a single account resource.
+ */
 public class AccountDetailResponse extends RepresentationModel<AccountDetailResponse> {
 
     private Long id;
