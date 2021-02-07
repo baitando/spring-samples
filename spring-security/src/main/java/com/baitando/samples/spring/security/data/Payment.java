@@ -1,11 +1,14 @@
-package com.baitando.samples.spring.security.service.data;
+package com.baitando.samples.spring.security.data;
 
 import java.math.BigDecimal;
 
+/**
+ * Represents a payment, i.e. a transaction which transfers money from one account to another.
+ */
 public class Payment {
-    private String ibanInitiator;
-    private String ibanReceiver;
-    private BigDecimal amount;
+    private final String ibanInitiator;
+    private final String ibanReceiver;
+    private final BigDecimal amount;
 
     public Payment(String ibanInitiator, String ibanReceiver, BigDecimal amount) {
         this.ibanInitiator = ibanInitiator;
@@ -17,24 +20,12 @@ public class Payment {
         return ibanInitiator;
     }
 
-    public void setIbanInitiator(String ibanInitiator) {
-        this.ibanInitiator = ibanInitiator;
-    }
-
     public String getIbanReceiver() {
         return ibanReceiver;
     }
 
-    public void setIbanReceiver(String ibanReceiver) {
-        this.ibanReceiver = ibanReceiver;
-    }
-
     public BigDecimal getAmount() {
         return amount;
-    }
-
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
     }
 
     @Override

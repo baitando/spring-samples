@@ -11,7 +11,7 @@ public class CommonSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .anyRequest().hasRole("USER").and()
+                .anyRequest().hasRole("USERS").and()
                 .httpBasic().and()
                 .csrf().disable();
     }

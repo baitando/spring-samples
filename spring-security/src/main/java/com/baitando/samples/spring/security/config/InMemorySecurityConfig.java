@@ -16,7 +16,7 @@ public class InMemorySecurityConfig extends CommonSecurityConfig {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("melanie").password("{noop}melaniepwd").roles("ADMIN").and()
-                .withUser("max").password("{noop}maxpwd").roles("USER");
+                .withUser("melanie").password("{noop}melaniepwd").roles("ADMINS").and()
+                .withUser("max").password("{noop}maxpwd").roles("USERS");
     }
 }

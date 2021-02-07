@@ -1,7 +1,7 @@
 package com.baitando.samples.spring.security.controller;
 
+import com.baitando.samples.spring.security.data.Payment;
 import com.baitando.samples.spring.security.service.PaymentService;
-import com.baitando.samples.spring.security.service.data.Payment;
 import org.junit.Test;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpStatus;

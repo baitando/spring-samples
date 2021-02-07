@@ -1,7 +1,7 @@
 package com.baitando.samples.spring.security.service.internal;
 
+import com.baitando.samples.spring.security.data.Payment;
 import com.baitando.samples.spring.security.service.PaymentService;
-import com.baitando.samples.spring.security.service.data.Payment;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.baitando.samples.spring.security.service;
 
-import com.baitando.samples.spring.security.service.data.Payment;
+import com.baitando.samples.spring.security.data.Payment;
 
 import java.util.List;
 
