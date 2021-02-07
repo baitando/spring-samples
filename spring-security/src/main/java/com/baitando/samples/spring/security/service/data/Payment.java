@@ -1,4 +1,4 @@
-package de.baitando.spring.samples.aop;
+package com.baitando.samples.spring.security.service.data;
 
 import java.math.BigDecimal;
 
