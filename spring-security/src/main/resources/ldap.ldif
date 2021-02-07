@@ -1,0 +1,54 @@
+dn: dc=baitando,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: baitando
+
+dn: ou=groups,dc=baitando,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=subgroups,ou=groups,dc=baitando,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: subgroups
+
+dn: ou=people,dc=baitando,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=max,ou=people,dc=baitando,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Max Mustermann
+sn: Max
+uid: max
+userPassword: maxpwd
+
+dn: uid=melanie,ou=people,dc=baitando,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Melanie Musterfrau
+sn: Melanie
+uid: melanie
+userPassword: melaniepwd
+
+dn: cn=users,ou=groups,dc=baitando,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: users
+ou: user
+uniqueMember: uid=max,ou=people,dc=baitando,dc=com
+
+dn: cn=admins,ou=groups,dc=baitando,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: admins
+ou: admin
+uniqueMember: uid=melanie,ou=people,dc=baitando,dc=com

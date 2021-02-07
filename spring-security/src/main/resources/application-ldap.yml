@@ -1,0 +1,6 @@
+spring:
+  ldap:
+    embedded:
+      ldif: classpath:ldap.ldif
+      base-dn: dc=baitando,dc=com
+      port: 8389
